@@ -27,13 +27,32 @@
     <div class="box" onclick="location.href='pagina3.html'">Esperimento Dell Palloncino</div>
   </div>
 
-  <div class="form-section">
-    <h2>Fai una domanda</h2>
-    <form action="https://formspree.io/f/xyzwpznk" method="POST">
-      <input type="text" name="name" placeholder="Il tuo nome" required />
-      <input type="email" name="email" placeholder="La tua email" required />
-      <textarea name="message" placeholder="Scrivi la tua domanda..." required></textarea>
-      <button type="submit">Invia</button>
+ <form action="mailto:tuaemail@email.it" method="post" enctype="text/plain">
+  <label for="nome">Nome (opzionale):</label><br>
+  <input type="text" id="nome" name="nome" placeholder="Il tuo nome..."><br>
+
+  <label for="domanda">La tua domanda:</label><br>
+  <textarea id="domanda" name="domanda" rows="5" placeholder="Scrivi qui la tua domanda..."></textarea><br>
+
+  <label>
+    <input type="checkbox" name="anonimo" value="sì">
+    Invia come anonimo
+  </label><br><br>
+
+  <input type="submit" value="Invia domanda">
+</form>
+
+<hr>
+
+<h3>📢 Risposte pubbliche</h3>
+<div style="max-width: 600px; margin: auto; text-align: left;">
+  <p><strong>Domanda:</strong> Come si carica un video?</p>
+  <p><strong>Risposta:</strong> Puoi caricare un file video .mp4 nella stessa cartella e usare il tag &lt;video&gt; nel tuo HTML.</p>
+
+  <p><strong>Domanda:</strong> Posso restare anonimo?</p>
+  <p><strong>Risposta:</strong> Sì! Basta spuntare la casella "Invia come anonimo" prima di inviare la domanda.</p>
+</div>
+
     </form>
   </div>
 </body>
