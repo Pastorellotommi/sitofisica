@@ -3,59 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Acqua</title>
+  <title>Esperimento dell'Acqua</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
       text-align: center;
       background: #f9f9f9;
-      padding: 30px;
+      padding: 20px;
+      margin: 0;
     }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
     .spazio {
       margin: 20px 0;
+    }
+
+    img, video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Esperimento dell'Acqua</h1>
-<p>ESPERIMENTO SULL’ACQUA </p>
-<p><b>Materiali</b></p>
-<p>- becher riempito d’acqua</p>
-<p>- Cupola di vetro </p>
-<p><b>Obbiettivo:</b></p>
-<p>Individuare l’evoluzione del becher di acqua in seguito ad una diminuzione della pressione 
-atmosferica</p>
-<p><b>Descrizione e risultato:</b></p>
-<p>Come nell’esperimento precedente, inizialmente si ha sia dentro che fuori la stessa 
-pressione, perciò tutto è in equilibrio. Successivamente, non appena viene rimossa l’aria, 
-la pressione all’interno della cupola diminuisce rispetto alla pressione dell’ esterno. 
-L’acqua, che si trova sotto una pressione inferiore rispetto alla sua normale condizione, 
-potrebbe cominciare a bollire. Questo succede perché la pressione bassa facilita il 
-passaggio dall’acqua allo stato di vapore.</p>
-  <div class="spazio">
-    <img src="immagine1.jpg" alt="Immagine Sezione 1" width="300" />
-  </div>
-  
-  <div class="spazio">
-    <img src="immagine11.jpg" alt="Immagine Sezione 1" width="300" />
-  </div>
-  
-  <div class="spazio">
-    <img src="immagine12.jpg" alt="Immagine Sezione 1" width="300" />
-  </div>
+  <div class="container">
+    <h1>Esperimento dell'Acqua</h1>
 
-  <div class="spazio">
-    <video width="500" controls>
-      <source src="video acqua .mp4" type="video/mp4">
-      Il tuo browser non supporta il tag video.
-    </video>
-  </div>
+    <p><strong>Materiali:</strong></p>
+    <p>- Becher riempito d’acqua<br>- Cupola di vetro</p>
 
-  <div class="spazio">
-    <a href="index.html">Torna alla Home</a>
-  </div>
+    <p><strong>Obiettivo:</strong></p>
+    <p>Individuare l’evoluzione del becher di acqua in seguito ad una diminuzione della pressione atmosferica.</p>
 
+    <p><strong>Descrizione e risultato:</strong></p>
+    <p>Come nell’esperimento precedente, inizialmente si ha sia dentro che fuori la stessa pressione, perciò tutto è in equilibrio. Successivamente, non appena viene rimossa l’aria, la pressione all’interno della cupola diminuisce rispetto alla pressione dell’esterno. L’acqua, che si trova sotto una pressione inferiore rispetto alla sua normale condizione, potrebbe cominciare a bollire. Questo succede perché la pressione bassa facilita il passaggio dall’acqua allo stato di vapore.</p>
+
+    <div class="spazio">
+      <img src="immagine1.jpg" alt="Esperimento Acqua 1">
+    </div>
+
+    <div class="spazio">
+      <img src="immagine11.jpg" alt="Esperimento Acqua 2">
+    </div>
+
+    <div class="spazio">
+      <img src="immagine12.jpg" alt="Esperimento Acqua 3">
+    </div>
+
+    <div class="spazio">
+      <video controls>
+        <source src="video acqua .mp4" type="video/mp4">
+        Il tuo browser non supporta il tag video.
+      </video>
+    </div>
+
+    <div class="spazio">
+      <a href="index.html">← Torna alla Home</a>
+    </div>
+  </div>
 </body>
 </html>
-
