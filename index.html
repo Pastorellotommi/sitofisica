@@ -2,81 +2,27 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Crediti</title>
-<style>
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f9f9f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-
-  .container {
-    width: 90%;
-    max-width: 700px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  }
-
-  h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-
-  p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    font-size: 17px;
-  }
-
-  footer {
-    margin-top: 40px;
-    font-size: 13px;
-    color: #777;
-  }
-
-  @media (max-width: 600px) {
-    h1 {
-      font-size: 24px;
-    }
-
-    p {
-      font-size: 16px;
-    }
-
-    .container {
-      padding: 15px;
-    }
-  }
-</style>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creatività, fisica</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
       background: #f2f2f2;
+      color: #333;
+      text-align: center;
     }
 
     header {
       background: #333;
       color: white;
       padding: 20px;
-      text-align: center;
     }
 
     .sections {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
       margin: 30px;
@@ -107,7 +53,6 @@
     }
 
     .form-container h2 {
-      text-align: center;
       margin-bottom: 20px;
     }
 
@@ -157,11 +102,6 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
-    .risposte h2 {
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
     .risposta {
       margin-bottom: 20px;
     }
@@ -174,11 +114,35 @@
       background-color: #f2f2f2;
       margin-top: 60px;
     }
+
+    .footer-links a {
+      display: inline-block;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+      .box {
+        width: 90%;
+      }
+      .form-container, .risposte {
+        margin: 30px 15px;
+        padding: 20px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Benvenuto nel mio sito</h1>
+    <h1>Esperimenti di Fisica</h1>
   </header>
 
   <div class="sections">
@@ -210,24 +174,21 @@
 
   <div class="risposte">
     <h2>📢 Risposte pubbliche</h2>
-
     <div class="risposta">
       <p><strong>Domanda:</strong> Come si carica un video?</p>
       <p><strong>Risposta:</strong> Carica il file video nella stessa cartella e usa il tag &lt;video&gt; nel tuo HTML.</p>
     </div>
-
     <div class="risposta">
       <p><strong>Domanda:</strong> Posso restare anonimo?</p>
       <p><strong>Risposta:</strong> Sì, basta spuntare la casella "Invia come anonimo".</p>
     </div>
   </div>
 
-<footer>
-  <div class="footer-links">
-    <a href="crediti.html">Crediti</a>
-  </div>
-  © 2025 Tutti i diritti riservati - pastorello tommaso
-</footer>
-
+  <footer>
+    <div class="footer-links">
+      <a href="crediti.html">Crediti</a>
+    </div>
+    © 2025 Tutti i diritti riservati - pastorello tommaso
+  </footer>
 </body>
 </html>
